@@ -18,14 +18,23 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiS-yY-uSD">
                                 <rect key="frame" x="107" y="100" width="200" height="100"/>
                                 <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTabbed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HB3-fA-gDJ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTE-eh-naE">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTE-eh-naE">
                                 <rect key="frame" x="107" y="230" width="200" height="100"/>
                                 <state key="normal" image="germany"/>
+                                <connections>
+                                    <action selector="buttonTabbed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9YY-hP-uPR"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7S-ak-UVV">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7S-ak-UVV">
                                 <rect key="frame" x="107" y="360" width="200" height="100"/>
                                 <state key="normal" image="france"/>
+                                <connections>
+                                    <action selector="buttonTabbed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="37I-Xo-hSF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -42,7 +51,8 @@
                     <navigationItem key="navigationItem" id="G5E-GV-iBf"/>
                     <connections>
                         <outlet property="button1" destination="CiS-yY-uSD" id="5CQ-o5-WX8"/>
-                        <outlet property="button2" destination="s7S-ak-UVV" id="mAo-QL-yGN"/>
+                        <outlet property="button2" destination="tTE-eh-naE" id="MTp-Xc-DaZ"/>
+                        <outlet property="button3" destination="s7S-ak-UVV" id="uza-7h-BSH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
