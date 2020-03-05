@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KYF-Bf-iEs">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,25 +12,34 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GuessTheFlag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiS-yY-uSD">
-                                <rect key="frame" x="107" y="100" width="200" height="100"/>
+                                <rect key="frame" x="60" y="56" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CiS-yY-uSD" secondAttribute="height" multiplier="2:1" id="0fX-iO-Arw"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTabbed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HB3-fA-gDJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTE-eh-naE">
-                                <rect key="frame" x="107" y="230" width="200" height="100"/>
+                                <rect key="frame" x="60" y="186" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tTE-eh-naE" secondAttribute="height" multiplier="2:1" id="lTx-lA-e1L"/>
+                                </constraints>
                                 <state key="normal" image="germany"/>
                                 <connections>
                                     <action selector="buttonTabbed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9YY-hP-uPR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7S-ak-UVV">
-                                <rect key="frame" x="107" y="360" width="200" height="100"/>
+                                <rect key="frame" x="60" y="316" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="s7S-ak-UVV" secondAttribute="height" multiplier="2:1" id="GqR-fh-ibM"/>
+                                </constraints>
                                 <state key="normal" image="france"/>
                                 <connections>
                                     <action selector="buttonTabbed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="37I-Xo-hSF"/>
@@ -43,8 +52,11 @@
                             <constraint firstItem="CiS-yY-uSD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="HiQ-Sz-L1B"/>
                             <constraint firstItem="tTE-eh-naE" firstAttribute="top" secondItem="CiS-yY-uSD" secondAttribute="bottom" constant="30" id="NwZ-gG-m52"/>
                             <constraint firstItem="CiS-yY-uSD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="T6Z-0n-gTe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="s7S-ak-UVV" secondAttribute="bottom" constant="20" id="bsi-L1-Vv4"/>
                             <constraint firstItem="s7S-ak-UVV" firstAttribute="top" secondItem="tTE-eh-naE" secondAttribute="bottom" constant="30" id="d2l-i6-xvE"/>
                             <constraint firstItem="tTE-eh-naE" firstAttribute="centerX" secondItem="CiS-yY-uSD" secondAttribute="centerX" id="m7v-0d-wE4"/>
+                            <constraint firstItem="s7S-ak-UVV" firstAttribute="height" secondItem="tTE-eh-naE" secondAttribute="height" id="pyZ-2W-KNC"/>
+                            <constraint firstItem="tTE-eh-naE" firstAttribute="height" secondItem="CiS-yY-uSD" secondAttribute="height" id="z2q-P4-Nbu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -65,7 +77,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KYF-Bf-iEs" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8Jr-G3-ik7">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
